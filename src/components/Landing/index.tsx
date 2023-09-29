@@ -11,6 +11,7 @@ export const Landing = ({ slice }: LandingProps) => {
           <PrismicRichText
             field={slice.primary.title}
             components={{
+              // @ts-ignore
               heading1: ({ children }: DefaultProps) => (
                 <Heading
                   as='h1'
