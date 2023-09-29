@@ -1,0 +1,64 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "title": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Occaecat dolore ipsum commodo irure ea ipsum ullamco. Ad nisi labore est culpa laborum occaecat aliqua proident anim dolore cillum adipisicing."
+            }
+          }
+        ]
+      },
+      "logo": {
+        "origin": {
+          "id": "main",
+          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+          "width": 5243,
+          "height": 3495
+        },
+        "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+        "width": 5243,
+        "height": 3495,
+        "edit": {
+          "zoom": 1,
+          "crop": {
+            "x": 0,
+            "y": 0
+          },
+          "background": "transparent"
+        },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
+        "thumbnails": {}
+      },
+      "social_youtube": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://google.com"
+        }
+      },
+      "social_instagram": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "http://twitter.com"
+        }
+      },
+      "social_linkedin": {
+        "__TYPE__": "LinkContent",
+        "value": {
+          "__TYPE__": "ExternalLink",
+          "url": "https://prismic.io"
+        }
+      }
+    },
+    "items": []
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "id": "internal_hero",
+  "type": "SharedSlice",
+  "name": "InternalHero",
+  "description": "InternalHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}
