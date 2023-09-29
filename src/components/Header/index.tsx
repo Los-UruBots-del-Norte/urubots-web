@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import ThemeToggler from '../ThemeToggler';
 import { PrismicNextLink } from '@prismicio/next';
-import { UrlObject } from 'url';
 import { HeaderProps } from '@/components/types/Header';
 import logo from '../../../public/images/logo/logo.svg';
 import logo2 from '../../../public/images/logo/logo-2.svg';
@@ -57,9 +56,10 @@ export const Header = ({ locales, navigation }: HeaderProps) => {
       "| |    `.__.'    | || | |____| |___| | || |    `.__.'    | || |  |_______/   | || |   `.____.'   | || |   |_____|    | || |  |_______.'  | |\n" +
       "| |              | || |              | || |              | || |              | || |              | || |              | || |              | |\n" +
       "| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |\n" +
-      " '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' \n")
+      " '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' \n" +
+      "Created by: sbarcelona@gmail.com\n"
+  )
 
-  // @ts-ignore
   return (
     <>
       <header
@@ -128,19 +128,7 @@ export const Header = ({ locales, navigation }: HeaderProps) => {
                 >
                   <ul className='block lg:flex lg:space-x-12'>
                     {navigation.map(
-                      (
-                        menuItem: {
-                          path: string;
-                          id: number;
-                          title: string;
-                          submenu: {
-                            path: string;
-                            id: number | null | undefined;
-                            title: string | null | undefined;
-                          }[];
-                        },
-                        index
-                      ) => (
+                      (menuItem, index) => (
                         <li key={menuItem.id} className='group relative'>
                           {menuItem.path ? (
                             <Link
@@ -178,15 +166,7 @@ export const Header = ({ locales, navigation }: HeaderProps) => {
                                   openIndex === index ? 'block' : 'hidden'
                                 }`}
                               >
-                                {menuItem.submenu.map(
-                                  (submenuItem: {
-                                    path: string | UrlObject;
-                                    id: React.Key | null | undefined;
-                                    title:
-                                      | string
-                                      | null
-                                      | undefined;
-                                  }) => (
+                                {menuItem.submenu?.map((submenuItem) => (
                                     <Link
                                       href={submenuItem.path}
                                       key={submenuItem.id}
@@ -209,11 +189,7 @@ export const Header = ({ locales, navigation }: HeaderProps) => {
                 <div className='flex flex-wrap gap-3'>
                   <span className="hidden md:block" aria-hidden={true}>🌐</span>
                   <ul className='flex flex-wrap gap-3 dark:text-white'>
-                    {locales.map((locale: {
-                        lang: string;
-                        url: string | UrlObject;
-                        lang_name: string;
-                    }) => (
+                    {locales.map((locale) => (
                       <li key={locale.lang} className='first:font-semibold'>
                         <PrismicNextLink
                           href={locale.url}
