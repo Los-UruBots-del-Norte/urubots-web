@@ -1,8 +1,7 @@
 'use client';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {useEffect, useState} from 'react';
 import ThemeToggler from '../ThemeToggler';
 import {PrismicNextLink} from '@prismicio/next';
 import {HeaderProps} from '@/components/types/Header';
@@ -10,11 +9,15 @@ import logo from '../../../public/images/logo/logo.svg';
 import logo2 from '../../../public/images/logo/logo-2.svg';
 
 export const Header = ({locales, navigation}: HeaderProps) => {
-    const localeLabels = {
+    // @ts-ignore
+    const localeLabels : { [key:string] } = {
         'en-us': 'EN',
         'es-ar': 'ES',
         'pt-br': 'PT',
     };
+
+    const {lang} = locales[0];
+    console.log(localeLabels[lang]);
 
     // Navbar toggle
     const [navbarOpen, setNavbarOpen] = useState(false);
