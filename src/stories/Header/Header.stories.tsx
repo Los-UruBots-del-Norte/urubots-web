@@ -10,14 +10,25 @@ const meta: Meta<typeof Header> = {
 type Story = StoryObj<typeof Header>;
 export const Default: Story = {
   args: {
-    locales: ['en-us', 'es-uy'],
+    locales: [
+      {
+        lang: 'en',
+        url: '/',
+        lang_name: 'English',
+      },
+      {
+        lang: 'es',
+        url: '/',
+        lang_name: 'Español',
+      }
+    ],
     navigation: [
       {
-        link: {
-          url: '/',
-          type: 'page',
-        },
-        label: 'Home',
+        id: 1,
+        title: 'Home',
+        path: '/',
+        newTab: false,
+        submenu: [],
       },
     ],
   },
