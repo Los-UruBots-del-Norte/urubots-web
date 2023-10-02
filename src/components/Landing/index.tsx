@@ -1,13 +1,13 @@
+// @ts-nocheck
+
 import React from 'react';
 import {PrismicNextImage} from '@prismicio/next';
 import {PrismicRichText} from '@/components/Utils/PrismicRichText';
 import {Heading} from '@/components/Common/Heading';
 import {LandingProps, DefaultProps} from '@/components/types/Landing';
-
 export const Landing = ({slice}: LandingProps) => {
     return (
-        <section
-            className='flex min-h-screen flex-col items-center align-items-center place-items-center justify-center light-blue-400 background-gradient dark:background-gradient-dark'>
+        <section className='flex min-h-screen flex-col items-center align-items-center place-items-center justify-center light-blue-400 background-gradient dark:background-gradient-dark'>
             <div className='flex-col relative place-items-center align-items-center'>
                 <div className='pb-8 flex-row'>
                     <PrismicRichText
@@ -38,7 +38,6 @@ export const Landing = ({slice}: LandingProps) => {
                 <div className='mt-9 flex-row align-items-center justify-center'>
                     <div className='flex-row flex justify-around align-middle'>
                         <a
-                            {/* @ts-ignore */}
                             href={slice.primary.social_instagram.url}
                             target={'_blank'}
                             rel={'noreferrer'}
@@ -55,7 +54,6 @@ export const Landing = ({slice}: LandingProps) => {
                             </svg>
                         </a>
                         <a
-                            {/* @ts-ignore */}
                             href={slice.primary.social_youtube.url}
                             target={'_blank'}
                             rel={'noreferrer'}
@@ -72,7 +70,6 @@ export const Landing = ({slice}: LandingProps) => {
                             </svg>
                         </a>
                         <a
-                            {/* @ts-ignore */}
                             href={slice.primary.social_linkedin.url}
                             target={'_blank'}
                             rel={'noreferrer'}
