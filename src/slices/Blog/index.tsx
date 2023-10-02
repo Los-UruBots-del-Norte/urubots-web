@@ -2,6 +2,8 @@ import { Content } from '@prismicio/client';
 import { SliceComponentProps } from '@prismicio/react';
 import { SectionTitle } from '@/components/Common/SectionTitle';
 import { SingleBlog } from '@/components/SingleBlog';
+import type {Blog} from "@/components/types/Blog";
+
 /**
  * Props for `Blog`.
  */
@@ -11,7 +13,7 @@ export type BlogProps = SliceComponentProps<Content.BlogSlice>;
  * Component for "Blog" Slices.
  */
 const Blog = ({ slice }: BlogProps): JSX.Element => {
-  const blogData: [] = [
+  const blogData: Blog[] = [
     {
       id: 1,
       title: 'Best UI components for modern websites',
