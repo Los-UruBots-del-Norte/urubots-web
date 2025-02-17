@@ -1,9 +1,8 @@
 import {PrismicImage, PrismicRichText} from "@prismicio/react";
-import {isFilled} from "@prismicio/client";
 
-export const BlogItem = ({slice}) => {
-    console.log("BlogItem slice", slice)
+export const BlogItem = ({slice}:any) => {
     if(!slice) return null;
+
     return (
         <section className="pb-[120px] pt-[150px]">
         <div>
