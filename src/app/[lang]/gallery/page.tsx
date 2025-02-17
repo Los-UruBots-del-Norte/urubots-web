@@ -25,7 +25,7 @@ export default async function Page({
 }: {
   params: { lang: string; uid: string };
 }) {
-  console.log('#### gallery ###', uid, lang);
+  // console.log('#### gallery ###', uid, lang);
   const client = createClient();
   const page = await client
     .getByUID('gallery', 'gallery', { lang })

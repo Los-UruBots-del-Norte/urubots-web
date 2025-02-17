@@ -14,7 +14,7 @@ export default async function Page({
 }: {
   params: { uid: string; lang: string };
 }) {
-  console.log('### contact ###', lang);
+  // console.log('### contact ###', lang);
   const client = createClient();
   const page = await client
     .getByUID('contact', 'contact', { lang })

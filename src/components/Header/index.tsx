@@ -10,7 +10,7 @@ import logo2 from '../../../public/images/logo/logo-2.svg';
 
 export const Header = ({locales, navigation}: HeaderProps) => {
     // @ts-ignore
-    const localeLabels : { [key:string] } = {
+    const localeLabels: { [key: string] } = {
         'en-us': 'EN',
         'es-ar': 'ES',
         'pt-br': 'PT',

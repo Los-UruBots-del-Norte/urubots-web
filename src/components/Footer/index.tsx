@@ -5,7 +5,6 @@ import logo from '../../../public/images/logo/logo.svg';
 import logo2 from '../../../public/images/logo/logo-2.svg';
 
 export const Footer = ({navigation}: any) => {
-
     return (
         <>
             <footer
@@ -122,46 +121,46 @@ export const Footer = ({navigation}: any) => {
                             </div>
                         </div>
 
-                        <div className='w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12'>
-                            <div className='ml-6 mb-12 lg:mb-16'>
-                                <h2 className='mb-5 text-xl font-bold text-black dark:text-white'>
-                                    {
-                                        navigation.find(
-                                            (item: { submenu: [] }) =>
-                                                item.submenu && item.submenu.length > 0
-                                        ).title
-                                    }
-                                </h2>
-                                <ul>
-                                    {navigation
-                                        .find(
-                                            (item: { submenu: [] }) =>
-                                                item.submenu && item.submenu.length > 0
-                                        )
-                                        .submenu.map(
-                                            (menuItem: {
-                                                id: number;
-                                                title: string;
-                                                path: string;
-                                                newTab: boolean;
-                                            }) => (
-                                                <li key={menuItem.id} className='group relative'>
-                                                    {menuItem.path ? (
-                                                        <Link
-                                                            href={menuItem.path}
-                                                            className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-3 lg:px-0`}
-                                                        >
-                                                            {menuItem.title}
-                                                        </Link>
-                                                    ) : (
-                                                        <></>
-                                                    )}
-                                                </li>
-                                            )
-                                        )}
-                                </ul>
-                            </div>
-                        </div>
+                        {/*<div className='w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12'>*/}
+                        {/*    <div className='ml-6 mb-12 lg:mb-16'>*/}
+                        {/*        <h2 className='mb-5 text-xl font-bold text-black dark:text-white'>*/}
+                        {/*            {*/}
+                        {/*                navigation.find(*/}
+                        {/*                    (item: { submenu: [] }) =>*/}
+                        {/*                        item.submenu && item.submenu.length > 0*/}
+                        {/*                ).title*/}
+                        {/*            }*/}
+                        {/*        </h2>*/}
+                        {/*        <ul>*/}
+                        {/*            {navigation*/}
+                        {/*                .find(*/}
+                        {/*                    (item: { submenu: [] }) =>*/}
+                        {/*                        item.submenu && item.submenu.length > 0*/}
+                        {/*                )*/}
+                        {/*                .submenu.map(*/}
+                        {/*                    (menuItem: {*/}
+                        {/*                        id: number;*/}
+                        {/*                        title: string;*/}
+                        {/*                        path: string;*/}
+                        {/*                        newTab: boolean;*/}
+                        {/*                    }) => (*/}
+                        {/*                        <li key={menuItem.id} className='group relative'>*/}
+                        {/*                            {menuItem.path ? (*/}
+                        {/*                                <Link*/}
+                        {/*                                    href={menuItem.path}*/}
+                        {/*                                    className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-3 lg:px-0`}*/}
+                        {/*                                >*/}
+                        {/*                                    {menuItem.title}*/}
+                        {/*                                </Link>*/}
+                        {/*                            ) : (*/}
+                        {/*                                <></>*/}
+                        {/*                            )}*/}
+                        {/*                        </li>*/}
+                        {/*                    )*/}
+                        {/*                )}*/}
+                        {/*        </ul>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                         <div className='w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12'>
                             <div className='ml-6 mb-12 lg:mb-16'>
                                 <h2 className='mb-5 text-xl font-bold text-black dark:text-white'>

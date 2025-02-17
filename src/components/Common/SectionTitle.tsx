@@ -14,7 +14,7 @@ export const SectionTitle = ({
   return (
     <>
       <div
-        className={`wow fadeInUp w-full ${center ? 'mx-auto text-center' : ''}`}
+        className={`wow fadeInUp w-full text-black dark:text-white ${center ? 'mx-auto text-center' : ''}`}
         data-wow-delay='.1s'
         style={{ maxWidth: width, marginBottom: mb }}
       >

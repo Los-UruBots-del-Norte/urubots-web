@@ -1,14 +1,17 @@
-export const HeroVideo = () => {
+import {YoutubeEmbed} from "@/components/YoutubeEnbed";
+
+export const HeroVideo = ({slice}:any) => {
   return (
     <section className='relative bg-cover bg-center bg-no-repeat'>
-      <video
-        className='w-full h-full object-cover mix-blend-overlay absolute bg-opacity-50'
-        autoPlay
-        muted
-        loop
-      >
-        <source src='https://youtu.be/joQ6ox-ovuI' type='video/mp4' />
-      </video>
+      {/*<iframe*/}
+      {/*  className='w-full h-full object-cover mix-blend-overlay absolute bg-opacity-50'*/}
+      {/*  autoPlay*/}
+      {/*  muted*/}
+      {/*  loop*/}
+      {/*  src={'https://www.youtube.com/watch?v=joQ6ox-ovuI'}*/}
+      {/*/>*/}
+
+        <YoutubeEmbed embedId='joQ6ox-ovuI' />
 
       <div className='absolute inset-0 bg-transparent bg-gradient-to-r from-blue-400 via-blue-100 to-white/40 rtl:bg-gradient-to-l'></div>
 

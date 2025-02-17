@@ -15,8 +15,9 @@ const InternalHero = ({ slice }: InternalHeroProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      className="pt-24"
     >
-      <HeroInternal />
+      <HeroInternal slice={slice}/>
     </section>
   );
 };

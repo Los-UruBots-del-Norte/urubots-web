@@ -6,7 +6,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-export const HeroSlider = () => {
+export const HeroSlider = ({slice}:any) => {
   return (
     <>
       <article

@@ -1,0 +1,30 @@
+{
+  "id": "blog_list",
+  "type": "SharedSlice",
+  "name": "BlogList",
+  "description": "BlogList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "bloglist": {
+          "type": "Link",
+          "config": {
+            "label": "blogList",
+            "select": "document",
+            "repeat": false,
+            "customtypes": [
+              "blog"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

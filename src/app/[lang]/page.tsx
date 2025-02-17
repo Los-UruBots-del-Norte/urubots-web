@@ -9,7 +9,6 @@ import {getMenuItems} from '@/components/Utils/MenuItems';
 
 // export const dynamicParams = false;
 export default async function Page({params: {uid, lang}}: { params: { uid: string; lang: string }; }) {
-    console.log('## homepage ##', uid, lang);
     const client = createClient();
     const page = await client
         .getByUID('homepage', 'homepage', {lang})
@@ -25,13 +24,14 @@ export default async function Page({params: {uid, lang}}: { params: { uid: strin
     );
 }
 
-export async function generateStaticParams() {
-    const client = createClient();
-    const pages = await client.getAllByType('homepage', {lang: '*'});
-    return pages.map((page) => {
-        return {
-            uid: page.uid,
-            lang: page.lang,
-        };
-    });
-}
+// export async function generateStaticParams() {
+//     const client = createClient();
+//     const pages = await client.getAllByType('homepage', {lang: '*'});
+//     console.log('## pages ##', pages);
+//     return pages.map((page) => {
+//         return {
+//             uid: page.uid,
+//             lang: page.lang,
+//         };
+//     });
+// }

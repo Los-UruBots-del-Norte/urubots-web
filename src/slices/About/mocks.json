@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "pig",
+				"type": "Text"
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Occaecat deserunt velit officia non in eu reprehenderit et laborum ullamco. Nulla ipsum elit aute exercitation laborum non velit culpa aliquip deserunt non exercitation. Culpa quis laborum deserunt enim aute incididunt velit."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

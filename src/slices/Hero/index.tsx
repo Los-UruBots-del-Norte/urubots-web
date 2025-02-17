@@ -17,9 +17,9 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      {slice.variation === 'default' && <HeroComponent />}
-      {slice.variation === 'slider' && <HeroSlider />}
-      {slice.variation === 'video' && <HeroVideo />}
+      {slice.variation === 'default' && <HeroComponent slice={slice}/>}
+      {slice.variation === 'slider' && <HeroSlider slice={slice}/>}
+      {slice.variation === 'video' && <HeroVideo slice={slice}/>}
     </section>
   );
 };

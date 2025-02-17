@@ -14,10 +14,10 @@ export default async function Page({
 }: {
   params: { uid: string; lang: string };
 }) {
-  console.log('##### teams #####', lang);
+  // console.log('##### competition #####', lang);
   const client = createClient();
   const page = await client
-    .getByUID('teams', 'teams', { lang })
+    .getByUID('competition', 'competition', { lang })
     .catch(() => notFound());
 
   const locales = await getLocales(page, client);
@@ -32,7 +32,7 @@ export default async function Page({
 
 // export async function generateStaticParams() {
 //   const client = createClient();
-//   const pages = await client.getAllByType('teams', { lang: '*' });
+//   const pages = await client.getAllByType('competition', { lang: '*' });
 //   return pages.map((page) => {
 //     return {
 //       uid: page.uid,

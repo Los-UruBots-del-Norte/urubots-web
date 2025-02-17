@@ -30,6 +30,20 @@ export const Default: Story = {
         newTab: false,
         submenu: [],
       },
+      {
+        id: 2,
+        title: 'About',
+        path: '/about',
+        newTab: false,
+        submenu: [],
+      },
+        {
+            id: 3,
+            title: 'Blog',
+          path: '/blog',
+          newTab: false,
+          submenu: [],
+      },
     ],
   },
 };

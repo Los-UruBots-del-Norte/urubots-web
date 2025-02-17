@@ -10,8 +10,7 @@
  *
  * @returns {Promise<(import("@prismicio/types").PrismicDocument & { lang_name: string })[]>}
  */
-import { PrismicDocument } from '@prismicio/types';
-import { Client } from '@prismicio/client';
+import { Client, PrismicDocument } from '@prismicio/client';
 
 export async function getLocales(
   doc: PrismicDocument,
@@ -21,7 +20,7 @@ export async function getLocales(
     client.getRepository(),
     doc.alternate_languages.length > 0
       ? client.getAllByIDs(
-          doc.alternate_languages.map((altLang) => altLang.id),
+          doc.alternate_languages.map((altLang: { id: any; }) => altLang.id),
           {
             lang: '*',
             // Exclude all fields to speed up the query.

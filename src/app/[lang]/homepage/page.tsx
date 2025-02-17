@@ -13,7 +13,7 @@ export default async function Page({
 }: {
   params: { uid: string; lang: string };
 }) {
-  console.log('## homepage ##', uid, lang);
+  // console.log('## homepage ##', uid, lang);
   const client = createClient();
   const page = await client
     .getByUID('homepage', 'homepage', { lang })
@@ -29,13 +29,13 @@ export default async function Page({
   );
 }
 
-export async function generateStaticParams() {
-  const client = createClient();
-  const pages = await client.getAllByType('homepage', { lang: '*' });
-  return pages.map((page) => {
-    return {
-      uid: page.uid,
-      lang: page.lang,
-    };
-  });
-}
+// export async function generateStaticParams() {
+//   const client = createClient();
+//   const pages = await client.getAllByType('homepage', { lang: '*' });
+//   return pages.map((page) => {
+//     return {
+//       uid: page.uid,
+//       lang: page.lang,
+//     };
+//   });
+// }
