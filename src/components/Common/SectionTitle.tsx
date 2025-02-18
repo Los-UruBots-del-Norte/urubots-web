@@ -1,3 +1,6 @@
+import {PrismicRichText} from "@prismicio/react";
+import {isFilled, RichTextField } from "@prismicio/client";
+
 export const SectionTitle = ({
   title,
   paragraph,
@@ -6,7 +9,7 @@ export const SectionTitle = ({
   mb = '100px',
 }: {
   title: string;
-  paragraph: string;
+  paragraph: RichTextField;
   width?: string;
   center?: boolean;
   mb?: string;
@@ -21,9 +24,13 @@ export const SectionTitle = ({
         <h2 className='mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]'>
           {title}
         </h2>
-        <p className='text-base !leading-relaxed text-body-color md:text-lg'>
-          {paragraph}
-        </p>
+        <div className='text-base !leading-relaxed text-body-color md:text-lg'>
+          {
+            isFilled.richText(paragraph) && (
+              <PrismicRichText field={paragraph} />
+            )
+          }
+        </div>
       </div>
     </>
   );

@@ -32,43 +32,43 @@ const menuData = {
         path: '/en-us/team',
         newTab: false,
     },
-    {
-      id: 6,
-      title: 'Competitions',
-      newTab: false,
-      submenu: [
-        {
-          id: 41,
-          title: 'SSL',
-          path: '/en-us/competition/ssl',
-          newTab: false,
-        },
-        {
-          id: 42,
-          title: 'VSS',
-          path: '/en-us/competition/vss',
-          newTab: false,
-        },
-        {
-          id: 43,
-          title: 'UAV',
-          path: '/en-us/competition/uav',
-          newTab: false,
-        },
-        {
-          id: 44,
-          title: 'Autonomous Cars',
-          path: '/en-us/competition/auc',
-          newTab: false,
-        },
-      ],
-    },
-    {
-      id: 7,
-      title: 'URUCUP',
-      path: '/en-us/urucup',
-      newTab: false,
-    },
+    // {
+    //   id: 6,
+    //   title: 'Competitions',
+    //   newTab: false,
+    //   submenu: [
+    //     {
+    //       id: 41,
+    //       title: 'SSL',
+    //       path: '/en-us/competition/ssl',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 42,
+    //       title: 'VSS',
+    //       path: '/en-us/competition/vss',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 43,
+    //       title: 'UAV',
+    //       path: '/en-us/competition/uav',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 44,
+    //       title: 'Autonomous Cars',
+    //       path: '/en-us/competition/auc',
+    //       newTab: false,
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: 7,
+    //   title: 'URUCUP',
+    //   path: '/en-us/urucup',
+    //   newTab: false,
+    // },
     {
       id: 8,
       title: 'Contact',
@@ -107,43 +107,43 @@ const menuData = {
         path: '/team',
         newTab: false,
     },
-    {
-      id: 6,
-      title: 'Competencias',
-      newTab: false,
-      submenu: [
-        {
-          id: 41,
-          title: 'SSL',
-          path: '/competition/ssl',
-          newTab: false,
-        },
-        {
-          id: 42,
-          title: 'VSS',
-          path: '/competition/vss',
-          newTab: false,
-        },
-        {
-          id: 43,
-          title: 'UAV',
-          path: '/competition/uav',
-          newTab: false,
-        },
-        {
-          id: 44,
-          title: 'Autos autonomos',
-          path: '/competition/auc',
-          newTab: false,
-        },
-      ],
-    },
-    {
-      id: 7,
-      title: 'URUCUP',
-      newTab: false,
-      path: '/competition/urucup',
-    },
+    // {
+    //   id: 6,
+    //   title: 'Competencias',
+    //   newTab: false,
+    //   submenu: [
+    //     {
+    //       id: 41,
+    //       title: 'SSL',
+    //       path: '/competition/ssl',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 42,
+    //       title: 'VSS',
+    //       path: '/competition/vss',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 43,
+    //       title: 'UAV',
+    //       path: '/competition/uav',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 44,
+    //       title: 'Autos autonomos',
+    //       path: '/competition/auc',
+    //       newTab: false,
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: 7,
+    //   title: 'URUCUP',
+    //   newTab: false,
+    //   path: '/competition/urucup',
+    // },
     {
       id: 8,
       title: 'Contacto',
@@ -182,43 +182,43 @@ const menuData = {
         path: '/pt-br/team',
         newTab: false,
     },
-    {
-      id: 6,
-      title: 'Competições',
-      newTab: false,
-      submenu: [
-        {
-          id: 41,
-          title: 'SSL',
-          path: '/pt-br/competition/ssl',
-          newTab: false,
-        },
-        {
-          id: 42,
-          title: 'VSS',
-          path: '/pt-br/competition/vss',
-          newTab: false,
-        },
-        {
-          id: 43,
-          title: 'UAV',
-          path: '/pt-br/competition/uav',
-          newTab: false,
-        },
-        {
-          id: 44,
-          title: 'Carros autônomos',
-          path: '/pt-br/competition/auc',
-          newTab: false,
-        },
-      ],
-    },
-    {
-      id: 7,
-      title: 'URUCUP',
-      path: '/pt-br/urucup',
-      newTab: false,
-    },
+    // {
+    //   id: 6,
+    //   title: 'Competições',
+    //   newTab: false,
+    //   submenu: [
+    //     {
+    //       id: 41,
+    //       title: 'SSL',
+    //       path: '/pt-br/competition/ssl',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 42,
+    //       title: 'VSS',
+    //       path: '/pt-br/competition/vss',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 43,
+    //       title: 'UAV',
+    //       path: '/pt-br/competition/uav',
+    //       newTab: false,
+    //     },
+    //     {
+    //       id: 44,
+    //       title: 'Carros autônomos',
+    //       path: '/pt-br/competition/auc',
+    //       newTab: false,
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: 7,
+    //   title: 'URUCUP',
+    //   path: '/pt-br/urucup',
+    //   newTab: false,
+    // },
     {
       id: 8,
       title: 'Contato',

@@ -111,8 +111,8 @@
 				]
 			},
 			"button": {
-				"__TYPE__": "LinkContent",
 				"key": "5236c0e5-6bd0-44cc-a855-3e279828b5a8",
+				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
 					"url": "https://slicemachine.dev",
@@ -130,7 +130,31 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "video",
-		"primary": {},
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "were",
+				"type": "Text"
+			},
+			"subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "no",
+				"type": "Text"
+			},
+			"video": {
+				"__TYPE__": "LinkContent",
+				"key": "9e5f5e8b-2f37-4eae-a07f-cc4f4c4dc746",
+				"value": {
+					"__TYPE__": "FileLink",
+					"id": "mock_Media_link",
+					"kind": "file",
+					"name": "mock_name",
+					"url": "https://source.unsplash.com/daily",
+					"size": "0",
+					"text": "planet"
+				}
+			}
+		},
 		"items": [
 			{
 				"__TYPE__": "GroupItemContent",

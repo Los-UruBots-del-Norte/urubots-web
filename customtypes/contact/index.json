@@ -16,7 +16,11 @@
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": {}
+          "choices": {
+            "contact": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     },

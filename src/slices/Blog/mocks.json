@@ -3,111 +3,21 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"blogs": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"title",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "blew",
-									"type": "Text"
-								}
-							],
-							[
-								"author",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "more",
-									"type": "Text"
-								}
-							],
-							[
-								"image",
-								{
-									"origin": {
-										"id": "main",
-										"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
-										"width": 4024,
-										"height": 4024
-									},
-									"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
-									"width": 4024,
-									"height": 4024,
-									"edit": {
-										"zoom": 1,
-										"crop": {
-											"x": 0,
-											"y": 0
-										},
-										"background": "transparent"
-									},
-									"credits": null,
-									"alt": null,
-									"__TYPE__": "ImageContent",
-									"thumbnails": {}
-								}
-							],
-							[
-								"paragraph",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Officia ullamco dolor voluptate elit exercitation tempor voluptate cupidatat est exercitation deserunt do eu Lorem deserunt. Sint commodo mollit deserunt."
-											}
-										}
-									]
-								}
-							],
-							[
-								"publishDate",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Date",
-									"value": "2018-08-25"
-								}
-							],
-							[
-								"tags",
-								{
-									"__TYPE__": "FieldContent",
-									"value": "freedom",
-									"type": "Text"
-								}
-							],
-							[
-								"content",
-								{
-									"__TYPE__": "StructuredTextContent",
-									"value": [
-										{
-											"type": "paragraph",
-											"content": {
-												"text": "Lorem nulla esse ut laborum exercitation ea laborum. Et quis eiusmod do ex aliqua Lorem reprehenderit est velit. Cillum velit dolor adipisicing commodo elit ad laboris ea."
-											}
-										}
-									]
-								}
-							]
-						]
-					}
-				]
-			},
 			"title": {
 				"__TYPE__": "FieldContent",
 				"value": "mill",
 				"type": "Text"
 			},
 			"subtitle": {
-				"__TYPE__": "FieldContent",
-				"value": "help",
-				"type": "Text"
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit et tempor in et cupidatat tempor culpa est laboris adipisicing sint laboris. Pariatur consequat adipisicing tempor nostrud."
+						}
+					}
+				]
 			}
 		},
 		"items": []

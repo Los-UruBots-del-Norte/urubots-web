@@ -1,6 +1,5 @@
 import {createClient} from "@/prismicio";
 import {PrismicImage, PrismicRichText} from "@prismicio/react";
-import {PrismicNextLink} from "@prismicio/next";
 import Link from "next/link";
 
 
@@ -33,37 +32,6 @@ export const BlogSection = async ({slice}: any) => {
                                             <div className="mb-6 border-b border-body-color/10 pb-6 text-base text-body-color dark:border-white/10 dark:text-neutral-100">
                                                 <PrismicRichText field={post.data.paragraph}/>
                                             </div>
-                                            {/*<div className="flex items-center">*/}
-                                            {/*    <div*/}
-                                            {/*        className="mr-5 flex items-center border-r border-body-color border-opacity-10 pr-5 dark:border-white dark:border-opacity-10 xl:mr-3 xl:pr-3 2xl:mr-5 2xl:pr-5">*/}
-                                            {/*        <div className="mr-4">*/}
-                                            {/*            <div*/}
-                                            {/*                className="relative h-10 w-10 overflow-hidden rounded-full">*/}
-                                            {/*                <a*/}
-                                            {/*                    href="/blogs/author/amrin">*/}
-                                            {/*                    <img alt="Amrin" loading="lazy" decoding="async"*/}
-                                            {/*                         data-nimg="fill" sizes="100vw"*/}
-                                            {/*                         srcSet="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=3840&amp;q=75 3840w"*/}
-                                            {/*                         src="/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ftwjhlmkd%2Fproduction%2Fc4470595573783031b281a74e922f704b7dc9419-40x40.png&amp;w=3840&amp;q=75"*/}
-                                            {/*                         className="absolute inset-0 object-cover w-full h-full rounded-full bg-transparent"*/}
-                                            {/*                    /></a>*/}
-                                            {/*            </div>*/}
-                                            {/*        </div>*/}
-                                            {/*        <div className="w-full"><h4*/}
-                                            {/*            className="mb-1 text-sm font-medium text-dark dark:text-white">*/}
-                                            {/*            <a*/}
-                                            {/*                href="/blogs/author/amrin">By Amrin</a></h4>*/}
-                                            {/*            <div className="text-xs text-body-color"><p>Developer and*/}
-                                            {/*                Content Writer</p>*/}
-                                            {/*            </div>*/}
-                                            {/*        </div>*/}
-                                            {/*    </div>*/}
-                                            {/*    <div className="inline-block"><h4*/}
-                                            {/*        className="mb-1 text-sm font-medium text-dark dark:text-white">Date</h4>*/}
-                                            {/*        <p*/}
-                                            {/*            className="text-xs text-body-color dark:text-body-color-dark">Mar*/}
-                                            {/*            02 2026</p></div>*/}
-                                            {/*</div>*/}
                                         </div>
                                     </div>
                                 </Link>

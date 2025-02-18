@@ -1,13 +1,10 @@
-import Image from "next/image";
 import {PrismicImage, PrismicRichText} from "@prismicio/react";
-import {PrismicNextImage} from "@prismicio/next";
 
 export const Team = ({slice}: any) => {
     if (!slice || !slice.primary) {
         console.error("Invalid slice data", slice);
         return null;
     }
-    console.log('##### TeamContent #####', slice.primary);
     return (
         <section className="pt-20 bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">

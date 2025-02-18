@@ -8,6 +8,7 @@ export const components = {
   blog_list: dynamic(() => import("./BlogList")),
   blog_post: dynamic(() => import("./BlogPost")),
   breadcrumb: dynamic(() => import("./Breadcrumb")),
+  contact: dynamic(() => import("./Contact")),
   gallery: dynamic(() => import("./Gallery")),
   hero: dynamic(() => import("./Hero")),
   internal_hero: dynamic(() => import("./InternalHero")),

@@ -17,7 +17,7 @@ const SectionImageLeft = ({ slice }: SectionImageLeftProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <ColumnImageLeft slice={slice} />
+      <ColumnImageLeft slice={slice.primary} />
     </section>
   );
 };

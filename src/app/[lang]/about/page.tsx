@@ -6,19 +6,23 @@ import { getLocales } from '@/lib/getLocales';
 import { SliceZone } from '@prismicio/react';
 import { components } from '@/slices';
 import { getMenuItems } from '@/components/Utils/MenuItems';
-
+import { asText } from "@prismicio/client";
 export const dynamicParams = false;
 
-// export async function generateMetadata({ params } : { params: { lang: string }}) {
-//     const client = createClient();
-//     const page = await client
-//         .getByUID("about", "about", { lang: params.lang })
-//         .catch(() => notFound());
-//
-//     return {
-//         title: page.data.meta_title,
-//     };
-// }
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getByUID("about", "about").catch(() => notFound());
+
+  return {
+    // @ts-ignore
+    title: asText(page.data.title),
+    description: page.data.meta_description,
+    openGraph: {
+      title: page.data.meta_title ?? undefined,
+      images: [{ url: page.data.meta_image.url ?? "" }],
+    },
+  };
+}
 
 export default async function Page({
   params: { lang, uid },
@@ -40,14 +44,13 @@ export default async function Page({
   );
 }
 
-// export async function generateStaticParams() {
-//   const client = createClient();
-//   const pages = await client.getAllByType('about', { lang: '*' });
-//   console.log('### generateStaticParams about ###', pages);
-//   return pages.map((page) => {
-//     return {
-//       uid: page.uid,
-//       lang: page.lang,
-//     };
-//   });
-// }
+export async function generateStaticParams() {
+  const client = createClient();
+  const pages = await client.getAllByType('about', { lang: '*' });
+  return pages.map((page) => {
+    return {
+      uid: page.uid,
+      lang: page.lang,
+    };
+  });
+}

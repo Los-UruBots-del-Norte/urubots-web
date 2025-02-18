@@ -23,5 +23,5 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   // Do not localize these paths
-  matcher: ['/((?!api|_next/static|slice-simulator|favicon.ico|public).*)'],
+  matcher: ['/((?!api/send$|api|_next/static|slice-simulator|favicon.ico|public).*)'],
 };

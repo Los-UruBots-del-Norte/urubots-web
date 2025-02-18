@@ -1,6 +1,6 @@
-import {PrismicNextImage, PrismicNextLink} from "@prismicio/next";
+import {PrismicNextLink} from "@prismicio/next";
 import {PrismicImage, PrismicRichText} from "@prismicio/react";
-import Image from "next/image";
+import {isFilled} from "@prismicio/client";
 
 export const Hero = ({slice}: any) => {
   if (!slice || !slice.primary) {
@@ -15,7 +15,6 @@ export const Hero = ({slice}: any) => {
         </span>
     )
   }
-
   const {title, subtitle, image, button} = slice.primary;
 
   return (
@@ -27,12 +26,14 @@ export const Hero = ({slice}: any) => {
         <div className='bg-white relative pt-10 pb-10 md:pt-20 md:pb-20 lg:pt-20 dark:bg-gray-900'>
           <div className='relative xl:container m-auto px-6 md:px-12 lg:px-6'>
             <h1 className='sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl dark:text-white'>
-              {title} {generateText()}.
+              {title} {generateText()}
             </h1>
             <div className='lg:flex'>
               <div className='relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12'>
                 <div className='sm:text-3xl text-gray-700 dark:text-gray-300 lg:w-11/12'>
-                  <PrismicRichText field={subtitle} />
+                  {isFilled.richText(subtitle) && (
+                      <PrismicRichText field={subtitle} />
+                  )}
                 </div>
                 <div className='flex flex-wrap gap-4 justify-center lg:justify-start'>
                   <PrismicNextLink field={button}
@@ -48,7 +49,7 @@ export const Hero = ({slice}: any) => {
                     aria-hidden='true'
                     className='absolute scale-75 md:scale-110 inset-0 m-auto w-full h-full md:w-96 md:h-96 rounded-full rotate-45 bg-gradient-to-r from-sky-500 to-cyan-300 blur-3xl'
                   />
-                  <PrismicImage field={image} />
+                  <PrismicImage field={image} className='relative w-full'/>
                 </div>
               </div>
             </div>

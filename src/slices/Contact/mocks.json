@@ -1,0 +1,49 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"information_title": {
+				"__TYPE__": "FieldContent",
+				"value": "barn",
+				"type": "Text"
+			},
+			"information_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "cow",
+				"type": "Text"
+			},
+			"information_email": {
+				"__TYPE__": "FieldContent",
+				"value": "oxygen",
+				"type": "Text"
+			},
+			"information_phone": {
+				"__TYPE__": "FieldContent",
+				"value": "remarkable",
+				"type": "Text"
+			},
+			"information_address": {
+				"__TYPE__": "FieldContent",
+				"value": "safe",
+				"type": "Text"
+			},
+			"contact_title": {
+				"__TYPE__": "FieldContent",
+				"value": "beside",
+				"type": "Text"
+			},
+			"contact_subtitle": {
+				"__TYPE__": "FieldContent",
+				"value": "ground",
+				"type": "Text"
+			},
+			"contact_button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "bush",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

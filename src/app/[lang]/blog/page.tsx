@@ -6,11 +6,25 @@ import {getLocales} from '@/lib/getLocales';
 import {SliceZone} from '@prismicio/react';
 import {components} from '@/slices';
 import {getMenuItems} from '@/components/Utils/MenuItems';
-
+import {asText} from "@prismicio/client";
 export const dynamicParams = false;
 
+export async function generateMetadata(): Promise<Metadata> {
+    const client = createClient();
+    const page = await client.getByUID("blog", "blog").catch(() => notFound());
+
+    return {
+        // @ts-ignore
+        title: asText(page.data.title),
+        description: page.data.meta_description,
+        openGraph: {
+            title: page.data.meta_title ?? undefined,
+            images: [{ url: page.data.meta_image.url ?? "" }],
+        },
+    };
+}
+
 export default async function Page({params: {uid, lang}}: { params: { uid: string; lang: string }; }) {
-    // console.log('##### blog ####', uid, lang);
     const client = createClient();
     const page = await client
         .getByUID('blog', 'blog', {lang})
