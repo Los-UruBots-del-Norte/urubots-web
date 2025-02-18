@@ -17,6 +17,7 @@ export const Header = ({locales, navigation}: HeaderProps) => {
     };
 
     const {lang} = locales[0];
+    console.log("lang", lang);
 
     // Navbar toggle
     const [navbarOpen, setNavbarOpen] = useState(false);

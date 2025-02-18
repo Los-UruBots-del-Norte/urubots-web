@@ -11,7 +11,6 @@ type Params = { uid: string };
 
 export async function generateMetadata({params}: { params: Promise<Params> }): Promise<Metadata> {
     const { uid } = await params;
-    console.log("@@@@@", uid);
     const client = createClient();
     const page = await client.getByUID("blogpost", uid).catch(() => notFound());
     return {

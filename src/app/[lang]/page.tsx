@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
         },
     };
 }
-// export const dynamicParams = false;
+
 export default async function Page({params: {uid, lang}}: { params: { uid: string; lang: string } }) {
     const client = createClient();
     const page = await client
