@@ -1,6 +1,5 @@
 "use client";
-import React, {useState} from 'react';
-import Image from "next/image";
+import React, {useState, useEffect} from 'react';
 import {PrismicImage, PrismicRichText} from "@prismicio/react";
 
 const ContentSection = ({image, leftContent = false, children}:any) => {
@@ -24,7 +23,11 @@ const ContentSection = ({image, leftContent = false, children}:any) => {
 }
 
 const TabComponent = ({tabs}:any) => {
-    const [selectedTab, setSelectedTab] = useState(tabs[0].id);
+    const [selectedTab, setSelectedTab] = useState(0);
+    useEffect(() => {
+        setSelectedTab(tabs[0].id);
+    }, [tabs]);
+
     return (
         <div>
             <div className="tabButtons flex w-full items-center justify-around">
@@ -43,7 +46,6 @@ const TabComponent = ({tabs}:any) => {
                 ))}
             </div>
 
-            {/* Contenido de las pestañas */}
             <div className="w-full">
                 {selectedTab === 0 && (
                     <ContentSection

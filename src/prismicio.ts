@@ -42,6 +42,22 @@ const routes: prismic.ClientConfig['routes'] = [
     type: 'blogpost',
     path: '/:lang?/blog/:uid',
   },
+  {
+    type: 'award',
+    path: '/:lang?',
+  },
+  {
+    type: 'award',
+    path: '/:lang?/:uid',
+  },
+  {
+    type: 'team',
+    path: '/:lang?',
+  },
+  {
+    type: 'team',
+    path: '/:lang?/:uid',
+  }
 ];
 
 /**
