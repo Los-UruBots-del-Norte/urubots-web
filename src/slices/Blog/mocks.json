@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "mill",
+				"type": "Text"
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Velit et tempor in et cupidatat tempor culpa est laboris adipisicing sint laboris. Pariatur consequat adipisicing tempor nostrud."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

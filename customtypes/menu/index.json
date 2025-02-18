@@ -1,0 +1,10 @@
+{
+  "format": "custom",
+  "id": "menu",
+  "json": {
+    "Main": {}
+  },
+  "label": "menu",
+  "repeatable": false,
+  "status": true
+}

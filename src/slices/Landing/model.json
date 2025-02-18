@@ -1,0 +1,56 @@
+{
+  "id": "landing",
+  "type": "SharedSlice",
+  "name": "Landing",
+  "description": "Landing",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "logo": {
+          "type": "Image",
+          "config": { "label": "logo", "constraint": {}, "thumbnails": [] }
+        },
+        "social_youtube": {
+          "type": "Link",
+          "config": {
+            "label": "social_youtube",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "social_instagram": {
+          "type": "Link",
+          "config": {
+            "label": "social_instagram",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "social_linkedin": {
+          "type": "Link",
+          "config": {
+            "label": "social_linkedin",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

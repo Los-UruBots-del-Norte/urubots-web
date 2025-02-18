@@ -1,4 +1,20 @@
+// Desc: Next.js configuration file
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["images.prismic.io"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.prismic.io',
+        port: '',
+        pathname: '/urubots/**',
+      },
+    ],
+  },
+  experimental: {
+    appDir: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

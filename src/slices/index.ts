@@ -3,5 +3,17 @@
 import dynamic from "next/dynamic";
 
 export const components = {
-  content: dynamic(() => import("./Content")),
+  about: dynamic(() => import("./About")),
+  blog: dynamic(() => import("./Blog")),
+  blog_list: dynamic(() => import("./BlogList")),
+  blog_post: dynamic(() => import("./BlogPost")),
+  breadcrumb: dynamic(() => import("./Breadcrumb")),
+  contact: dynamic(() => import("./Contact")),
+  gallery: dynamic(() => import("./Gallery")),
+  hero: dynamic(() => import("./Hero")),
+  internal_hero: dynamic(() => import("./InternalHero")),
+  landing: dynamic(() => import("./Landing")),
+  section_image_left: dynamic(() => import("./SectionImageLeft")),
+  section_image_right: dynamic(() => import("./SectionImageRight")),
+  team: dynamic(() => import("./Team")),
 };
