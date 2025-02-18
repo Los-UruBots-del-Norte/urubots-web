@@ -57,6 +57,14 @@ const routes: prismic.ClientConfig['routes'] = [
   {
     type: 'team',
     path: '/:lang?/:uid',
+  },
+  {
+    type: 'contact',
+    path: '/:lang?',
+  },
+  {
+    type: 'contact',
+    path: '/:lang?/:uid',
   }
 ];
 
